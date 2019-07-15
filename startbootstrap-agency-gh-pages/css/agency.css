@@ -3,6 +3,13 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
+#contactForm>div>div>div>p>ul{
+	    background-color: #343A40;
+
+}
+td>img{
+	height: 6em;
+}
 .img-servicios{
 	height: 13em;
 }
