@@ -862,7 +862,7 @@
       required: {
         name: "Required",
         type: "required",
-        message: "ES OBLIGATORIO!!!-- data-validator-required-message to override -->"
+        message: "ES OBLIGATORIO!!<!-- data-validator-required-message to override -->"
       },
       checkone: {
         name: "Checkone",

@@ -1,3 +1,6 @@
+function buscar(){
+	
+}
 (function($) {
   "use strict"; // Start of use strict
 
