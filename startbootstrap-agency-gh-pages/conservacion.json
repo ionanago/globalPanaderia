@@ -1,0 +1,52 @@
+ [
+		{
+			"id": 1,
+			"producto": "Pan molde",
+			"temperatura": "Ambiente",
+			"vida": "2-3 meses"
+    },
+		{
+			"id": 2,
+			"producto": "Pan precocido",
+			"temperatura": "Ambiente",
+			"vida": "1-2 meses"
+    },
+		{
+			"id": 3,
+			"producto": "Bizcochos",
+			"temperatura": "Ambiente",
+			"vida": "3-4 meses"
+    },
+		{
+			"id": 4,
+			"producto": "Brioches",
+			"temperatura": "Ambiente",
+			"vida": "2-3 meses"
+    },
+		{
+
+			"id": 5,
+			"producto": "Magdalenas",
+			"temperatura": "Ambiente",
+			"vida": "2-3 meses"
+    },
+		{
+			"id": 6,
+			"producto": "Croissants",
+			"temperatura": "Ambiente",
+			"vida": "15-25 días"
+    },
+		{
+			"id": 7,
+			"producto": "Hojaldres",
+			"temperatura": "Ambiente",
+			"vida": "45 dias"
+    },
+		{
+			"id": 8,
+			"producto": "Crépes",
+			"temperatura": "Ambiente",
+			"vida": "1-2 meses"
+    }
+  ]
+

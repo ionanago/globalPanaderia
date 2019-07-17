@@ -1,27 +1,11 @@
-/*global $
-console:no-console*/
-console.log('tronco de consola1');
-$("#contactForm input,#contactForm textarea").jqBootstrapValidation({
-function post(){
-	var name = $("input#name").val();
-					var email = $("input#email").val();
-					var phone = $("input#phone").val();
-					var message = $("textarea#message").val();
-					var department = $("select#dpt").val();
-					console.log('tronco de consola3');
-	var button = $("#sendMessageButton");
-				$this.prop("disabled", true);
-				$.post("./mensajes.json", {
-						
-						nombre: name,
-						email: email,
-						telefono: phone,
-						departamento: department,
-						mensage: message
-					});
-};};
+/*jslint browser:true, devel:true*/
+/*eslint-env browser, es6*/
+/*eslint no-console: "off"*/
 
-/*
+/*global $*/
+
+
+
 $(function () {
 console.log('tronco de consola2');
 	$("#contactForm input,#contactForm textarea").jqBootstrapValidation({
@@ -38,8 +22,8 @@ console.log('tronco de consola2');
 					var message = $("textarea#message").val();
 					var department = $("select#dpt").val();
 					console.log('tronco de consola3');
-				},
-				var button = $("#sendMessageButton");
+				}
+				$this = $("#sendMessageButton");
 				$this.prop("disabled", true);
 				$.post("./mensajes.json", {
 						
@@ -82,11 +66,11 @@ console.log('tronco de consola2');
 		filter: function () {
 			return $(this).is(":visible");
 		},
-});*/
+});
 
 $("a[data-toggle=\"tab\"]").click(function (e) {
-e.preventDefault();
-$(this).tab("show");
+	e.preventDefault();
+	$(this).tab("show");
 });
 
 /*When clicking on Full hide fail/success boxes */

@@ -4,8 +4,17 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
+.table td, .table th{
+	vertical-align: middle !important;
+	text-align: center !important;
+}
+th{
+	text-align: center !important;
+}
 
-
+#tablita td{
+	text-align: left !important;
+}
 .center{
 	vertical-align :center;
 }

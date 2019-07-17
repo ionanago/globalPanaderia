@@ -12,7 +12,7 @@
 
 	<!-- Bootstrap core CSS -->
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+	<link href="css/agency.css" rel="stylesheet">
 	<!-- Custom fonts for this template -->
 	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -21,8 +21,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
 	<!-- Custom styles for this template -->
-	<link href="css/agency.css" rel="stylesheet">
 
+	<!--<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="js/cargarDatos.js"></script>-->
 </head>
 
 <body id="page-top">
@@ -269,7 +270,7 @@
 								<td>1501104</td>
 								<td>Baguette</td>
 								<td><img src="img/productos/baguette.PNG" alt=""></td>
-								<td align="center" class="mx-auto"  rowspan="6" >
+								<td align="center" class="mx-auto" rowspan="6">
 									<small>
 										Harina de TRIGO, agua, sal, levadura,<br> antiaglomerante E-170, emulgente:<br> lecticina de SOJA, E-472e y E-491,<br> antioxidante E-300, enzimas, agente de<br> tratamiento de la harina E-920<br><br><br>
 										<u><strong>CONTIENE GLUTEN DE TRIGO Y SOJA</strong></u>
@@ -279,7 +280,7 @@
 									<small>
 										VALOR ENERGÉTICO:<br>
 										266kcal/100g - 1.127,84kj/100g<br>
-										<table>
+										<table id="tablita">
 											<tr>
 												<td>GRASAS</td>
 												<td>1,10g</td>
@@ -355,7 +356,7 @@
 								<td>121504</td>
 								<td>Caña de chocolate</td>
 								<td><img src="img/productos/ca%C3%B1aChoco.PNG" alt=""></td>
-								<td align="center"><small>Harina de TRIGO, margarina (grasas y aceites vegetales, agua, emulgente (mono y diglicéridos de ácidos grasos), acidulanto (acido crence9, conservante (sorbito potasico), aroma, colorante ibetacarotenop, sal, agua, chocolate (azúcar, aceite vegetal, cacao en rabio desgrasado. airneden modificado, grasa vegetal hidrogenada, emulgente y aroma. cobertura chocolate (azúcar, grasa vegetal hidrogenada, polvo de cacao desgrasado (27%). emulgentes (lamina do SOJA. (492) y aroma (valnillinal. HUEVO pasteurizado
+								<td align="center"><small>Harina de TRIGO, margarina (grasas y aceites vegetales, agua, emulgente (mono y diglicéridos de ácidos grasos), acidulanto (acido crence9, conservante (sorbito potasico), aroma, colorante ibetacarotenop, sal, agua, chocolate (azúcar, aceite vegetal, cacao en rabio desgrasado. airneden modificado, grasa vegetal hidrogenada, emulgente y aroma. cobertura chocolate (azúcar, grasa vegetal hidrogenada, polvo de cacao desgrasado (27%),s emulgentes(lecitina de SOJA,E492) y aroma(vainillina). HUEVO pasteurizado.
 										<br>
 										<u><strong>CONTIENE GLUTEN DE TRIGO, SOJA Y HUEVO</strong></u>
 									</small>
@@ -373,7 +374,7 @@
 								<td>1215010</td>
 								<td>Palmera chocolate</td>
 								<td><img src="img/productos/palmera_choco.PNG" alt=""></td>
-								<td align="center" ><small>
+								<td align="center"><small>
 										Harina de TRIGO, margarina(grasas y aceites vegetales, agua, emulgente (mono y diglicéridos de ácidos grasos), acidulante (acido citrico), conservantes(sorbato potásico), aroma, colorante(betacaroteno)), azúcar invertido(30% sacarosa y agua), sal, agua, colorante E-102,E-110, azúcar, covertura de chocolate (azúcar,grasa y vegetal hidrogenada, polvo de cacao desgrasado (27%), emulgentes(lecitina de SOJA,E492) y aroma(vainillina)
 
 										<br>
@@ -405,8 +406,8 @@
 								<th>Vida Útil</th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr>
+						<tbody id="conservacionCuerpo">
+							<!--<tr>
 								<th>Pan molde</th>
 								<td align="center">Ambiente</td>
 								<td>2-3 meses</td>
@@ -445,7 +446,7 @@
 								<th>Crépes</th>
 								<td align="center">Ambiente</td>
 								<td>1-2 mese</td>
-							</tr>
+							</tr>-->
 						</tbody>
 					</table>
 				</div>
@@ -560,11 +561,11 @@
 									<p class="help-block text-danger"></p>
 								</div>
 								<div class="form-group">
-									<input class="form-control" id="phone" type="tel"  placeholder="Numero de telefono *" required="required" data-validation-required-message="ingrese su numero de telefono">
+									<input class="form-control" id="phone" type="tel" placeholder="Numero de telefono *" required="required" data-validation-required-message="ingrese su numero de telefono">
 									<p class="help-block text-danger"></p>
 								</div>
 								<div class="form-group">
-									<select class="form-control "  style="color: darkgray" id="dpt" required="required" data-validation-required-message="seleccione departamento">
+									<select class="form-control " style="color: darkgray" id="dpt" required="required" data-validation-required-message="seleccione departamento">
 										<option id=0 value=""></option>
 										<option id=1 value="Atención al cliente">Atención al cliente</option>
 										<option id=2 value="Recursos Humanos" style="color: darkgray">Recursos Humanos</option>
@@ -573,22 +574,23 @@
 									</select>
 									<p class="help-block text-danger"></p>
 								</div>
-								<div class="form-group bg-light" style="color: darkgray">
-									<label for="privacidad" class="form-controlrounded" style="">Por favor acepte nuestra politica de privacidad</label>
-									<input class="form-control" id="privacidad" type="checkbox" required="required">
-									<p class="help-block text-danger"></p>
-								</div>
+								
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<textarea class="form-control" id="message" placeholder="Mensaje *" required="required" data-validation-required-message="Escriba algo"></textarea>
 									<p class="help-block text-danger"></p>
 								</div>
+								<div class="form-group bg-light" style="color: darkgray">
+									<label for="privacidad" class="form-controlrounded" style="">Por favor acepte nuestra politica de privacidad</label>
+									<input class="form-control" id="privacidad" type="checkbox" required="required">
+									<p class="help-block text-danger"></p>
+								</div>
 							</div>
 							<div class="clearfix"></div>
 							<div class="col-lg-12 text-center">
 								<div id="success"></div>
-								<button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" onclick="post()">Enviar Mensaje</button>
+								<button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="" onclick="">Enviar Mensaje</button>
 							</div>
 						</div>
 					</form>
@@ -754,6 +756,7 @@
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+
 	<!-- Plugin JavaScript -->
 	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
@@ -763,7 +766,7 @@
 
 	<!-- Custom scripts for this template -->
 	<script src="js/agency.min.js"></script>
-
+	<script src="js/cargarDatos.js"></script>
 
 	<!-- noticias, reciclado del portfolio(eliminado) del tema, con modificaciones para adaptarlo a mis necesidades -->
 	<div class="portfolio-modal modal fade" id="noticia1" tabindex="-1" role="dialog" aria-hidden="true">
