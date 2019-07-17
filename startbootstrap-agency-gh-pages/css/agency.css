@@ -3,6 +3,12 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
+
+
+
+.center{
+	vertical-align :center;
+}
 #fotpano{
 	height: auto;
 	width: 80%;
@@ -28,7 +34,7 @@
 
 }
 td>img{
-	height: 6em;
+	height: 4em;
 }
 .img-servicios{
 	height: 13em;
@@ -40,7 +46,13 @@ footer{
 
 #logo{
 	height: 4em;
-    
+ 
+	
+	
+	
+/*
+<<<< aqu comienza el css de la plantilla >>>>	
+*/	
 }
 body {
   overflow-x: hidden;
